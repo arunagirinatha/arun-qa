@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="Rabo-Reports">
+	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="../../New folder/eclipse/" />
+	<property name="junit.output.dir" value="junit" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.8" />
+	<property name="source" value="1.8" />
+	<path id="Web App Libraries.libraryclasspath">
+		<pathelement location="WebContent/WEB-INF/resources" />
+	</path>
+	<path id="EAR Libraries.libraryclasspath" />
+	<path id="JUnit 5.libraryclasspath">
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.opentest4j_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.apiguardian_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+	</path>
+	<path id="Rabo-Reports.classpath">
+		<pathelement location="build/classes" />
+		<path refid="Web App Libraries.libraryclasspath" />
+		<path refid="EAR Libraries.libraryclasspath" />
+		<pathelement location="../../Jars/commons-logging-1.2.jar" />
+		<pathelement location="../../Jars/javax.servlet-api.jar" />
+		<pathelement location="../../Jars/javax.xml.bind.jar" />
+		<pathelement location="../../Jars/opencsv-2.0.jar" />
+		<pathelement location="../../Jars/org-apache-commons-logging.jar" />
+		<pathelement location="../../Jars/spring-aop-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-beans-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-context-3.2.0.release.jar" />
+		<pathelement location="../../Jars/spring-context-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-core-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-expression-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-web-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-webmvc-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/jaxb-api-2.2.jar" />
+		<pathelement location="../../Jars/jaxb-core-2.2.7.jar" />
+		<pathelement location="../../Jars/jaxb-impl-2.2_1.jar" />
+		<pathelement location="../../Jars/activation.jar" />
+		<pathelement location="../../Jars/log4j-1.2.17.jar" />
+		<pathelement location="../../Jars/junit.jar" />
+		<path refid="JUnit 5.libraryclasspath" />
+		<pathelement location="../../Jars/jstl-1.2.jar" />
+	</path>
+	<path id="run.CSVUtil.readCSV(File).classpath">
+		<path refid="Rabo-Reports.classpath" />
+		<pathelement location="WebContent/WEB-INF/resources" />
+		<pathelement location="../../Jars/commons-logging-1.2.jar" />
+		<pathelement location="../../Jars/javax.servlet-api.jar" />
+		<pathelement location="../../Jars/javax.xml.bind.jar" />
+		<pathelement location="../../Jars/opencsv-2.0.jar" />
+		<pathelement location="../../Jars/org-apache-commons-logging.jar" />
+		<pathelement location="../../Jars/spring-aop-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-beans-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-context-3.2.0.release.jar" />
+		<pathelement location="../../Jars/spring-context-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-core-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-expression-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-web-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-webmvc-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/jaxb-api-2.2.jar" />
+		<pathelement location="../../Jars/jaxb-core-2.2.7.jar" />
+		<pathelement location="../../Jars/jaxb-impl-2.2_1.jar" />
+		<pathelement location="../../Jars/activation.jar" />
+		<pathelement location="../../Jars/log4j-1.2.17.jar" />
+		<pathelement location="../../Jars/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.opentest4j_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.apiguardian_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+		<pathelement location="../../Jars/jstl-1.2.jar" />
+	</path>
+	<path id="run.TestCSVUtil.classpath">
+		<path refid="Rabo-Reports.classpath" />
+		<pathelement location="WebContent/WEB-INF/resources" />
+		<pathelement location="../../Jars/commons-logging-1.2.jar" />
+		<pathelement location="../../Jars/javax.servlet-api.jar" />
+		<pathelement location="../../Jars/javax.xml.bind.jar" />
+		<pathelement location="../../Jars/opencsv-2.0.jar" />
+		<pathelement location="../../Jars/org-apache-commons-logging.jar" />
+		<pathelement location="../../Jars/spring-aop-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-beans-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-context-3.2.0.release.jar" />
+		<pathelement location="../../Jars/spring-context-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-core-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-expression-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-web-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-webmvc-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/jaxb-api-2.2.jar" />
+		<pathelement location="../../Jars/jaxb-core-2.2.7.jar" />
+		<pathelement location="../../Jars/jaxb-impl-2.2_1.jar" />
+		<pathelement location="../../Jars/activation.jar" />
+		<pathelement location="../../Jars/log4j-1.2.17.jar" />
+		<pathelement location="../../Jars/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.opentest4j_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.apiguardian_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+		<pathelement location="../../Jars/jstl-1.2.jar" />
+	</path>
+	<path id="run.TestCSVUtil.testReadCSV.classpath">
+		<path refid="Rabo-Reports.classpath" />
+		<pathelement location="WebContent/WEB-INF/resources" />
+		<pathelement location="../../Jars/commons-logging-1.2.jar" />
+		<pathelement location="../../Jars/javax.servlet-api.jar" />
+		<pathelement location="../../Jars/javax.xml.bind.jar" />
+		<pathelement location="../../Jars/opencsv-2.0.jar" />
+		<pathelement location="../../Jars/org-apache-commons-logging.jar" />
+		<pathelement location="../../Jars/spring-aop-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-beans-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-context-3.2.0.release.jar" />
+		<pathelement location="../../Jars/spring-context-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-core-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-expression-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-web-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-webmvc-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/jaxb-api-2.2.jar" />
+		<pathelement location="../../Jars/jaxb-core-2.2.7.jar" />
+		<pathelement location="../../Jars/jaxb-impl-2.2_1.jar" />
+		<pathelement location="../../Jars/activation.jar" />
+		<pathelement location="../../Jars/log4j-1.2.17.jar" />
+		<pathelement location="../../Jars/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.opentest4j_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.apiguardian_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+		<pathelement location="../../Jars/jstl-1.2.jar" />
+	</path>
+	<path id="run.TestReportServiceImpl.classpath">
+		<path refid="Rabo-Reports.classpath" />
+		<pathelement location="WebContent/WEB-INF/resources" />
+		<pathelement location="../../Jars/commons-logging-1.2.jar" />
+		<pathelement location="../../Jars/javax.servlet-api.jar" />
+		<pathelement location="../../Jars/javax.xml.bind.jar" />
+		<pathelement location="../../Jars/opencsv-2.0.jar" />
+		<pathelement location="../../Jars/org-apache-commons-logging.jar" />
+		<pathelement location="../../Jars/spring-aop-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-beans-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-context-3.2.0.release.jar" />
+		<pathelement location="../../Jars/spring-context-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-core-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-expression-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-web-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/spring-webmvc-4.3.1.RELEASE.jar" />
+		<pathelement location="../../Jars/jaxb-api-2.2.jar" />
+		<pathelement location="../../Jars/jaxb-core-2.2.7.jar" />
+		<pathelement location="../../Jars/jaxb-impl-2.2_1.jar" />
+		<pathelement location="../../Jars/activation.jar" />
+		<pathelement location="../../Jars/log4j-1.2.17.jar" />
+		<pathelement location="../../Jars/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.jupiter.params_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.commons_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.engine_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.launcher_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.runner_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.platform.suite.api_1.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit.vintage.engine_5.1.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.opentest4j_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.apiguardian_1.0.0.v20180327-1502.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="C:/Users/Arunagirinathar/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+		<pathelement location="../../Jars/jstl-1.2.jar" />
+	</path>
+	<target name="init">
+		<mkdir dir="build/classes" />
+		<copy includeemptydirs="false" todir="build/classes">
+			<fileset dir="src">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="build/classes">
+			<fileset dir="test">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="build/classes" />
+	</target>
+	<target depends="clean" name="cleanall" />
+	<target depends="build-subprojects,build-project" name="build" />
+	<target name="build-subprojects" />
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src" />
+			<src path="test" />
+			<classpath refid="Rabo-Reports.classpath" />
+		</javac>
+	</target>
+	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects" />
+	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+		<copy todir="${ant.library.dir}">
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar" />
+		</copy>
+		<unzip dest="${ant.library.dir}">
+			<patternset includes="jdtCompilerAdapter.jar" />
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar" />
+		</unzip>
+	</target>
+	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" />
+		<antcall target="build" />
+	</target>
+	<target name="CSVUtil.readCSV(File)">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml" />
+			<test name="nl.rabo.report.utils.CSVUtil" todir="${junit.output.dir}" />
+			<jvmarg line="-ea" />
+			<classpath refid="run.CSVUtil.readCSV(File).classpath" />
+		</junit>
+	</target>
+	<target name="TestCSVUtil">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml" />
+			<test name="nl.rabo.report.utils.TestCSVUtil" todir="${junit.output.dir}" />
+			<jvmarg line="-ea" />
+			<classpath refid="run.TestCSVUtil.classpath" />
+		</junit>
+	</target>
+	<target name="TestCSVUtil.testReadCSV">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml" />
+			<test name="nl.rabo.report.utils.TestCSVUtil" todir="${junit.output.dir}" />
+			<jvmarg line="-ea" />
+			<classpath refid="run.TestCSVUtil.testReadCSV.classpath" />
+		</junit>
+	</target>
+	<target name="TestReportServiceImpl">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml" />
+			<test name="nl.rabo.report.serviceimpl.TestReportServiceImpl" todir="${junit.output.dir}" />
+			<jvmarg line="-ea" />
+			<classpath refid="run.TestReportServiceImpl.classpath" />
+		</junit>
+	</target>
+	<target name="junitreport">
+		<junitreport todir="${junit.output.dir}">
+			<fileset dir="${junit.output.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${junit.output.dir}" />
+		</junitreport>
+	</target>
+	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+		<mkdir dir="WebContent/WEB-INF/classes" />
+
+		<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+			<fileset dir="build/classes">
+				<include name="**/*.class" />
+			</fileset>
+		</copy>
+
+		<war destfile="raboreports.war" basedir="WebContent" needxmlfile="false">
+		</war>
+	</target>
+</project>

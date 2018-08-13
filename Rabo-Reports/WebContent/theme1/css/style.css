@@ -1,0 +1,57 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+    background: rgb(247, 247, 247);
+}
+table th, table td {
+   padding: 10px 10px;
+   border-bottom: 1px solid #b8b8b8;
+   text-align: left;
+}
+table  thead{
+  background: #337ab7;
+  color: #fff;
+}
+table tbody tr{
+    background: #fff;
+}
+table tbody tr:nth-child(even){
+	background: #eeeeee21;
+}
+#page-wrapper{
+	padding: 15px;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.no-data{
+	text-align: center;
+	color: #5a7294;
+	font-weight: bold;
+}
+#table-wrapper {
+	width: 100%;
+	overflow: auto;
+}
+[ng-model="dataFilter"] {
+	padding: 10px;
+    border: 1px solid #3393d7;
+    float: right;
+    width: 250px;
+    margin: 10px 0px;
+}
+.col-6 {
+	width: 50%;
+	float: left;
+}
+.title {
+	font-size: 18px;
+    margin: 5px 5px;
+    line-height: 55px;
+    color: #337ab7;
+    font-weight: bold;
+}
